@@ -1,5 +1,5 @@
 config:
-  target: "http://localhost:3000"
+  target: "http://localhost:3000"  # Cambia a 3001 o 3002 según la app que quieras probar
   phases:
     - duration: 60
       arrivalRate: 10
@@ -7,4 +7,4 @@ config:
 scenarios:
   - flow:
       - get:
-          url: "/"
+          url: "/user/1" 
