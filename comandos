@@ -1,0 +1,2 @@
+autocannon -c 10 -d 60 -p 10 "http://localhost:3000/user/$(uuidgen)"
+autocannon -c 10 -d 60 -p 10 "http://localhost:3001/user/$(uuidgen)"

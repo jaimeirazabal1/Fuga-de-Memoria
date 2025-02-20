@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  leaky-app:
+    container_name: memoria-leak
+    build: ./leaky-app
+    mem_limit: 1g
+    ports:
+      - "3000:3000"
+    command: node index.js
+
+  clean-app:
+    container_name: memoria-clean
+    build: ./clean-app
+    mem_limit: 1g
+    ports:
+      - "3001:3000"
+    command: node index.js
